@@ -68,3 +68,12 @@ void drawShape(Shape shape, int location) {
     drawO(x, y);
   }
 }
+
+void drawX(int x, int y) {
+  line(x, y, x + (width / 3), y + (height / 3));
+  line(x, y + (height / 3), x + (width / 3), y);
+}
+
+void drawO(int x, int y) {
+  
+}
