@@ -75,5 +75,6 @@ void drawX(int x, int y) {
 }
 
 void drawO(int x, int y) {
-  
+  ellipseMode(CORNER);
+  ellipse(x, y, width / 3, height / 3);
 }
