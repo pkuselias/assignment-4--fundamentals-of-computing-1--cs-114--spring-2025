@@ -4,5 +4,4 @@ void setup() {
 
 void draw() {
   drawBoard();
-
 }

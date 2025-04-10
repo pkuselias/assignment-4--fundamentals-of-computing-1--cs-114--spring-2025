@@ -5,6 +5,9 @@ void drawBoard() {
   line(0, (2 * height) / 3, width, (2 * height) / 3);
 }
 
+int x;
+int y;
+
 void drawShape(Shape shape, int location) {
   switch (location) {
     case 0:
