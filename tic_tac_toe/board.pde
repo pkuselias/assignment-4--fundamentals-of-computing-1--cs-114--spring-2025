@@ -8,3 +8,5 @@ boolean canSelectFive = true;
 boolean canSelectSix = true;
 boolean canSelectSeven = true;
 boolean canSelectEight = true;
+
+int[] plays = new int[8];
