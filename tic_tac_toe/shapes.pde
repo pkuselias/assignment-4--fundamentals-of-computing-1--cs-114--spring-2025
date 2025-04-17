@@ -64,7 +64,7 @@ void drawShape(int turn, int location) {
       break;
   }
   
-  if (turn == COMPUTER_TURN) {
+  if (turn == DRAW_X) {
     drawX(x, y);
     
   } else {

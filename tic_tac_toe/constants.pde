@@ -1,2 +1,2 @@
-final int COMPUTER_TURN = 1;
-final int YOUR_TURN = 2;
+final int DRAW_X = 1;
+final int DRAW_O = 2;
