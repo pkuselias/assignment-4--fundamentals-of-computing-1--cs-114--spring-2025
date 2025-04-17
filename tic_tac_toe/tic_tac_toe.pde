@@ -18,6 +18,7 @@ void keyPressed() {
     case '0':
       if (canSelectZero == true) {
         location = 0;
+        plays[location] = 2;
         canSelectZero = false;
         
         break;
@@ -30,6 +31,7 @@ void keyPressed() {
     case '1':
       if (canSelectOne == true) {
         location = 1;
+        plays[location] = 2;
         canSelectOne = false;
       
         break;
@@ -42,6 +44,7 @@ void keyPressed() {
     case '2':
       if (canSelectTwo == true) {
         location = 2;
+        plays[location] = 2;
         canSelectTwo = false;
       
         break;
@@ -54,6 +57,7 @@ void keyPressed() {
     case '3':
       if (canSelectThree == true) {
         location = 3;
+        plays[location] = 2;
         canSelectThree = false;
       
         break;
@@ -66,6 +70,7 @@ void keyPressed() {
     case '4':
       if (canSelectFour == true) {
         location = 4;
+        plays[location] = 2;
         canSelectFour = false;
       
         break;
@@ -78,6 +83,7 @@ void keyPressed() {
     case '5':
       if (canSelectFive == true) {
         location = 5;
+        plays[location] = 2;
         canSelectFive = false;
       
         break;
@@ -90,6 +96,7 @@ void keyPressed() {
     case '6':
       if (canSelectSix == true) {
         location = 6;
+        plays[location] = 2;
         canSelectSix = false;
       
         break;
@@ -102,6 +109,7 @@ void keyPressed() {
     case '7':
       if (canSelectSeven == true) {
         location = 7;
+        plays[location] = 2;
         canSelectSeven = false;
       
         break;
@@ -114,6 +122,7 @@ void keyPressed() {
     case '8':
       if (canSelectEight == true) {
         location = 8;
+        plays[location] = 2;
         canSelectEight = false;
       
         break;
