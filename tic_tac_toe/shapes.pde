@@ -8,7 +8,7 @@ void drawBoard() {
 int x;
 int y;
 
-void drawShape(int turn, int location) {
+void drawShape(int shape, int location) {
   switch (location) {
     case 0:
       x = 0;
@@ -64,7 +64,7 @@ void drawShape(int turn, int location) {
       break;
   }
   
-  if (turn == DRAW_X) {
+  if (shape == DRAW_X) {
     drawX(x, y);
     
   } else {
