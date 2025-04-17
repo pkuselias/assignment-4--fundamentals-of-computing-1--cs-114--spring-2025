@@ -10,13 +10,23 @@ int y;
 int shape;
 int location;
 boolean yourTurn = false;
+boolean canSelectZero = true;
+boolean canSelectOne = true;
+boolean canSelectTwo = true;
+boolean canSelectThree = true;
+boolean canSelectFour = true;
+boolean canSelectFive = true;
+boolean canSelectSix = true;
+boolean canSelectSeven = true;
+boolean canSelectEight = true;
 
 void drawShape(int shape, int location) {
   switch (location) {
     case 0:
       x = 0;
       y = 0;
-           break;
+      
+      break;
       
     case 1:
       x = width / 3;

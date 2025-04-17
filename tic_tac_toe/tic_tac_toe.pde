@@ -12,3 +12,109 @@ void draw() {
     yourTurn = true;
   }
 }
+
+void keyPressed() {
+  switch (key) {
+    case '0':
+      if (canSelectZero == true) {
+        location = 0;
+        canSelectZero = false;
+        
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '1':
+      if (canSelectOne == true) {
+        location = 1;
+        canSelectOne = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '2':
+      if (canSelectTwo == true) {
+        location = 2;
+        canSelectTwo = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '3':
+      if (canSelectThree == true) {
+        location = 3;
+        canSelectThree = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '4':
+      if (canSelectFour == true) {
+        location = 4;
+        canSelectFour = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '5':
+      if (canSelectFive == true) {
+        location = 5;
+        canSelectFive = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '6':
+      if (canSelectSix == true) {
+        location = 6;
+        canSelectSix = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '7':
+      if (canSelectSeven == true) {
+        location = 7;
+        canSelectSeven = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    case '8':
+      if (canSelectEight == true) {
+        location = 8;
+        canSelectEight = false;
+      
+        break;
+        
+      } else {
+        break;
+      }
+      
+    default:
+      println("Invalid key pressed");
+  }
+}
