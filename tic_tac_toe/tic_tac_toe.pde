@@ -23,6 +23,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -34,6 +35,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -45,6 +47,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -56,6 +59,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -67,6 +71,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -78,6 +83,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -89,6 +95,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -100,6 +107,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
@@ -111,6 +119,7 @@ void keyPressed() {
         break;
         
       } else {
+        println("Duplicate key pressed");
         break;
       }
       
