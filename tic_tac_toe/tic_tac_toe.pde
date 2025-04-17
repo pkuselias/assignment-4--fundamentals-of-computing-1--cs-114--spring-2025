@@ -4,4 +4,11 @@ void setup() {
 
 void draw() {
   drawBoard();
+  if (yourTurn) {
+    drawShape(2, location);
+    yourTurn = false;
+  } else {
+    drawShape(1, location);
+    yourTurn = true;
+  }
 }

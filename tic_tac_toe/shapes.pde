@@ -7,6 +7,9 @@ void drawBoard() {
 
 int x;
 int y;
+int shape;
+int location;
+boolean yourTurn = false;
 
 void drawShape(int shape, int location) {
   switch (location) {
