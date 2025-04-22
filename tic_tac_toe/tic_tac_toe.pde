@@ -4,12 +4,12 @@ void setup() {
 
 void draw() {
   drawBoard();
-  if (yourTurn) {
-    drawShape(2, location);
-    yourTurn = false;
-  } else {
+  if (yourTurn == false) {
     drawShape(1, location);
     yourTurn = true;
+  } else {
+    drawShape(2, location);
+    yourTurn = false;
   }
 }
 
