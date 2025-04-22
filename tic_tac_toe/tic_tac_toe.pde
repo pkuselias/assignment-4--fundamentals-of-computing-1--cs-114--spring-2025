@@ -6,10 +6,21 @@ void draw() {
   drawBoard();
   if (yourTurn == false) {
     drawShape(1, location);
-    yourTurn = true;
+    checkForWinner(1);
+    if (gameOver == true) {
+      noLoop();
+    } else {
+      yourTurn = true;
+    }
+    
   } else {
     drawShape(2, location);
-    yourTurn = false;
+    checkForWinner(2);
+    if (gameOver == true) {
+      noLoop();
+    } else {
+      yourTurn = false;
+    }
   }
 }
 
