@@ -20,6 +20,7 @@ void draw() {
     }
     
   } else {
+    noLoop();
     drawShape(2, location);
     checkForWinner(2);
     checkForDraw();
@@ -32,6 +33,7 @@ void draw() {
       }
     } else {
       yourTurn = false;
+      loop();
     }
   }
 }
