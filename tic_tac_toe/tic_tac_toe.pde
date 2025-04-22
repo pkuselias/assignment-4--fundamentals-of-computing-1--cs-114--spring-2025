@@ -47,7 +47,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -60,7 +63,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -73,7 +79,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -86,7 +95,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -99,7 +111,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -112,7 +127,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -125,7 +143,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -138,7 +159,10 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
@@ -151,11 +175,20 @@ void keyPressed() {
         break;
         
       } else {
-        println("Duplicate key pressed");
+        if (gameOver == false) {
+          println("Duplicate key pressed");
+        }
+        
         break;
       }
       
     default:
-      println("Invalid key pressed");
+      if (gameOver == false) {
+        println("Invalid key pressed");
+      }
+  }
+  
+  if (gameOver == true) {
+    println("Why are you still trying? The game is over!");
   }
 }
