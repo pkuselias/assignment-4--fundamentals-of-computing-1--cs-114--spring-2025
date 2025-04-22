@@ -7,6 +7,7 @@ void draw() {
   if (yourTurn == false) {
     drawShape(1, location);
     checkForWinner(1);
+    checkForDraw();
     if (gameOver == true) {
       noLoop();
       if (winner == true) {
@@ -21,6 +22,7 @@ void draw() {
   } else {
     drawShape(2, location);
     checkForWinner(2);
+    checkForDraw();
     if (gameOver == true) {
       noLoop();
       if (winner == true) {

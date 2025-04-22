@@ -11,7 +11,7 @@ boolean canSelectEight = true;
 boolean gameOver = false;
 boolean winner = false;
 boolean draw = false;
-int boardSpotsPlayed = 0;
+int boardSpotsPlayed;
 
 int[] plays = new int[9];
 
@@ -72,7 +72,10 @@ void checkForWinner(int shape) {
       }
     }
   }
-  
+}
+
+void checkForDraw() {
+  boardSpotsPlayed = 0;
   for (int i = 0; i < plays.length; i++) {
     if (plays[i] != 0) {
       boardSpotsPlayed++;
