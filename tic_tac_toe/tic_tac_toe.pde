@@ -5,11 +5,11 @@ void setup() {
 void draw() {
   drawBoard();
   if (yourTurn == false) {
+    noLoop();
     drawShape(1, location);
     checkForWinner(1);
     checkForDraw();
     if (gameOver == true) {
-      noLoop();
       if (winner == true) {
         println("The computer wins!");
       } else {
@@ -17,6 +17,7 @@ void draw() {
       }
     } else {
       yourTurn = true;
+      loop();
     }
     
   } else {
