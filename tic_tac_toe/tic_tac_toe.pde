@@ -9,6 +9,11 @@ void draw() {
     checkForWinner(1);
     if (gameOver == true) {
       noLoop();
+      if (winner == true) {
+        println("The computer wins!");
+      } else {
+        println("It's a draw!");
+      }
     } else {
       yourTurn = true;
     }
@@ -18,6 +23,11 @@ void draw() {
     checkForWinner(2);
     if (gameOver == true) {
       noLoop();
+      if (winner == true) {
+        println("You win!");
+      } else {
+        println("It's a draw!");
+      }
     } else {
       yourTurn = false;
     }
