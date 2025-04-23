@@ -6,6 +6,7 @@ void draw() {
   drawBoard();
   if (yourTurn == false) {
     noLoop();
+    computerLocation();
     drawShape(1, location);
     checkForWinner(1);
     checkForDraw();

@@ -91,13 +91,14 @@ void checkForDraw() {
 
 void computerLocation() {
   while (isPickingLocation == true) {
-    possibleLocation = int(random(8));
+    possibleLocation = int(random(0, 9));
     switch (possibleLocation) {
       case 0:
         if (canSelectZero == true) {
           canSelectZero = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -105,8 +106,9 @@ void computerLocation() {
       case 1:
         if (canSelectOne == true) {
           canSelectOne = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -114,8 +116,9 @@ void computerLocation() {
       case 2:
         if (canSelectTwo == true) {
           canSelectTwo = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -123,8 +126,9 @@ void computerLocation() {
       case 3:
         if (canSelectThree == true) {
           canSelectThree = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -132,8 +136,9 @@ void computerLocation() {
       case 4:
         if (canSelectFour == true) {
           canSelectFour = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -141,8 +146,9 @@ void computerLocation() {
       case 5:
         if (canSelectFive == true) {
           canSelectFive = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -150,8 +156,9 @@ void computerLocation() {
       case 6:
         if (canSelectSix == true) {
           canSelectSix = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -159,8 +166,9 @@ void computerLocation() {
       case 7:
         if (canSelectSeven == true) {
           canSelectSeven = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
@@ -168,8 +176,9 @@ void computerLocation() {
       case 8:
         if (canSelectEight == true) {
           canSelectEight = false;
-          isPickingLocation = true;
+          isPickingLocation = false;
           location = possibleLocation;
+          plays[location] = 1;
           
           break;
         }
