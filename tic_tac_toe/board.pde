@@ -84,7 +84,7 @@ void checkForDraw() {
     }
   }
   
-  if (boardSpotsPlayed > 7) {
+  if (boardSpotsPlayed == 9) {
     gameOver = true;
     if (winner == false) {
       draw = true;
@@ -99,9 +99,9 @@ void computerLocation() {
       case 0:
         if (canSelectZero == true) {
           canSelectZero = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -109,9 +109,9 @@ void computerLocation() {
       case 1:
         if (canSelectOne == true) {
           canSelectOne = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -119,9 +119,9 @@ void computerLocation() {
       case 2:
         if (canSelectTwo == true) {
           canSelectTwo = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -129,9 +129,9 @@ void computerLocation() {
       case 3:
         if (canSelectThree == true) {
           canSelectThree = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -139,9 +139,9 @@ void computerLocation() {
       case 4:
         if (canSelectFour == true) {
           canSelectFour = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -149,9 +149,9 @@ void computerLocation() {
       case 5:
         if (canSelectFive == true) {
           canSelectFive = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -159,9 +159,9 @@ void computerLocation() {
       case 6:
         if (canSelectSix == true) {
           canSelectSix = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -169,9 +169,9 @@ void computerLocation() {
       case 7:
         if (canSelectSeven == true) {
           canSelectSeven = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;
@@ -179,9 +179,9 @@ void computerLocation() {
       case 8:
         if (canSelectEight == true) {
           canSelectEight = false;
-          isPickingLocation = false;
           xLocation = possibleLocation;
           plays[xLocation] = 1;
+          isPickingLocation = false;
         }
         
         break;

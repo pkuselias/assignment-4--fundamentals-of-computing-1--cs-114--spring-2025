@@ -33,7 +33,7 @@ void draw() {
       }
     } else {
       yourTurn = true;
-      loop();
+      noLoop();
     }
     
   } else {
