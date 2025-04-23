@@ -119,7 +119,8 @@ void determineGameStatus() {
 }
 
 void computerLocation() {
-  while (isPickingLocation == true) {
+  isPickingLocation = true;
+  if (isPickingLocation == true) {
     possibleLocation = int(random(0, 9));
     switch (possibleLocation) {
       case 0:
