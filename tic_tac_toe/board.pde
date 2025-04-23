@@ -183,6 +183,7 @@ void computerLocation() {
           xLocation = possibleLocation;
           plays[xLocation] = 1;
         }
+        
         break;
     }
   }

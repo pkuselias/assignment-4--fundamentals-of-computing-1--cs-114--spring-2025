@@ -18,12 +18,10 @@ void draw() {
   }
   
   if (gameOver == true) {
-    noLoop();
     return;
   }
   
   if (yourTurn == false) {
-    //noLoop();
     computerLocation();
     checkForWinner(1);
     checkForDraw();
@@ -35,11 +33,10 @@ void draw() {
       }
     } else {
       yourTurn = true;
-      //loop();
+      loop();
     }
     
   } else {
-    //noLoop();
     checkForWinner(2);
     checkForDraw();
     if (gameOver == true) {
@@ -51,164 +48,185 @@ void draw() {
       }
     } else {
       yourTurn = false;
-      //loop();
+      loop();
     }
   }
 }
 
 void keyPressed() {
-  switch (key) {
-    case '0':
-      if (canSelectZero == true) {
-        oLocation = 0;
-        plays[oLocation] = 2;
-        canSelectZero = false;
-        
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '1':
-      if (canSelectOne == true) {
-        oLocation = 1;
-        plays[oLocation] = 2;
-        canSelectOne = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '2':
-      if (canSelectTwo == true) {
-        oLocation = 2;
-        plays[oLocation] = 2;
-        canSelectTwo = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '3':
-      if (canSelectThree == true) {
-        oLocation = 3;
-        plays[oLocation] = 2;
-        canSelectThree = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '4':
-      if (canSelectFour == true) {
-        oLocation = 4;
-        plays[oLocation] = 2;
-        canSelectFour = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '5':
-      if (canSelectFive == true) {
-        oLocation = 5;
-        plays[oLocation] = 2;
-        canSelectFive = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '6':
-      if (canSelectSix == true) {
-        oLocation = 6;
-        plays[oLocation] = 2;
-        canSelectSix = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '7':
-      if (canSelectSeven == true) {
-        oLocation = 7;
-        plays[oLocation] = 2;
-        canSelectSeven = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    case '8':
-      if (canSelectEight == true) {
-        oLocation = 8;
-        plays[oLocation] = 2;
-        canSelectEight = false;
-      
-        break;
-        
-      } else {
-        if (gameOver == false) {
-          println("Duplicate key pressed");
-        }
-        
-        break;
-      }
-      
-    default:
-      if (gameOver == false) {
-        println("Invalid key pressed");
-      }
-  }
-  
   if (gameOver == true) {
     println("Why are you still trying? The game is over!");
+    
+  } else {
+    if (yourTurn == true) {
+      switch (key) {
+        case '0':
+          if (canSelectZero == true) {
+            oLocation = 0;
+            plays[oLocation] = 2;
+            canSelectZero = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+            
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        case '1':
+          if (canSelectOne == true) {
+            oLocation = 1;
+            plays[oLocation] = 2;
+            canSelectOne = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+              
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        case '2':
+          if (canSelectTwo == true) {
+            oLocation = 2;
+            plays[oLocation] = 2;
+            canSelectTwo = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+              
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        case '3':
+          if (canSelectThree == true) {
+            oLocation = 3;
+            plays[oLocation] = 2;
+            canSelectThree = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+              
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        case '4':
+          if (canSelectFour == true) {
+            oLocation = 4;
+            plays[oLocation] = 2;
+            canSelectFour = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+              
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        case '5':
+          if (canSelectFive == true) {
+            oLocation = 5;
+            plays[oLocation] = 2;
+            canSelectFive = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+              
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        case '6':
+          if (canSelectSix == true) {
+            oLocation = 6;
+            plays[oLocation] = 2;
+            canSelectSix = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+            
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        case '7':
+          if (canSelectSeven == true) {
+            oLocation = 7;
+            plays[oLocation] = 2;
+            canSelectSeven = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+              
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+          
+        case '8':
+          if (canSelectEight == true) {
+            oLocation = 8;
+            plays[oLocation] = 2;
+            canSelectEight = false;
+            yourTurn = false;
+            loop();
+            
+            break;
+              
+          } else {
+            if (gameOver == false) {
+              println("Duplicate key pressed");
+            }
+              
+            break;
+          }
+            
+        default:
+          if (gameOver == false) {
+            println("Invalid key pressed");
+          }
+      }
+    }
   }
 }
