@@ -38,37 +38,10 @@ void draw() {
       return;
     
     } else { 
-      noLoop();
       computerLocation();
       yourTurn = true;
     }
   }
-  
-  //if (yourTurn == false) {
-  //  determineGameStatus();
-  //  if (gameOver == true) {
-  //    noLoop();
-  //    return;
-      
-  //  } else {
-  //    noLoop();
-  //    computerLocation();
-  //    yourTurn = true;
-  //  }
-    
-  //} else {
-  //  if (stopStatusFromRepeating == false) {
-  //    determineGameStatus();
-  //  }
-  //  if (gameOver == true) {
-  //    noLoop();
-  //    return;
-      
-  //  } else {
-  //    stopStatusFromRepeating = false;
-  //    yourTurn = false;
-  //  }
-  //}
 }
 
 void keyPressed() {
