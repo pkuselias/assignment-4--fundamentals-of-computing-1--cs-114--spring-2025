@@ -33,7 +33,6 @@ void draw() {
       }
     } else {
       yourTurn = true;
-      noLoop();
     }
     
   } else {
@@ -62,8 +61,7 @@ void keyPressed() {
       switch (key) {
         case '0':
           if (canSelectZero == true) {
-            oLocation = 0;
-            plays[oLocation] = 2;
+            plays[0] = 2;
             canSelectZero = false;
             yourTurn = false;
             loop();
@@ -72,7 +70,7 @@ void keyPressed() {
             
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -80,8 +78,7 @@ void keyPressed() {
             
         case '1':
           if (canSelectOne == true) {
-            oLocation = 1;
-            plays[oLocation] = 2;
+            plays[1] = 2;
             canSelectOne = false;
             yourTurn = false;
             loop();
@@ -90,7 +87,7 @@ void keyPressed() {
               
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -98,8 +95,7 @@ void keyPressed() {
             
         case '2':
           if (canSelectTwo == true) {
-            oLocation = 2;
-            plays[oLocation] = 2;
+            plays[2] = 2;
             canSelectTwo = false;
             yourTurn = false;
             loop();
@@ -108,7 +104,7 @@ void keyPressed() {
               
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -116,8 +112,7 @@ void keyPressed() {
             
         case '3':
           if (canSelectThree == true) {
-            oLocation = 3;
-            plays[oLocation] = 2;
+            plays[3] = 2;
             canSelectThree = false;
             yourTurn = false;
             loop();
@@ -126,7 +121,7 @@ void keyPressed() {
               
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -134,8 +129,7 @@ void keyPressed() {
             
         case '4':
           if (canSelectFour == true) {
-            oLocation = 4;
-            plays[oLocation] = 2;
+            plays[4] = 2;
             canSelectFour = false;
             yourTurn = false;
             loop();
@@ -144,7 +138,7 @@ void keyPressed() {
               
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -152,8 +146,7 @@ void keyPressed() {
             
         case '5':
           if (canSelectFive == true) {
-            oLocation = 5;
-            plays[oLocation] = 2;
+            plays[5] = 2;
             canSelectFive = false;
             yourTurn = false;
             loop();
@@ -162,7 +155,7 @@ void keyPressed() {
               
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -170,8 +163,7 @@ void keyPressed() {
             
         case '6':
           if (canSelectSix == true) {
-            oLocation = 6;
-            plays[oLocation] = 2;
+            plays[6] = 2;
             canSelectSix = false;
             yourTurn = false;
             loop();
@@ -180,7 +172,7 @@ void keyPressed() {
             
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -188,8 +180,7 @@ void keyPressed() {
             
         case '7':
           if (canSelectSeven == true) {
-            oLocation = 7;
-            plays[oLocation] = 2;
+            plays[7] = 2;
             canSelectSeven = false;
             yourTurn = false;
             loop();
@@ -198,7 +189,7 @@ void keyPressed() {
               
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -206,8 +197,7 @@ void keyPressed() {
           
         case '8':
           if (canSelectEight == true) {
-            oLocation = 8;
-            plays[oLocation] = 2;
+            plays[8] = 2;
             canSelectEight = false;
             yourTurn = false;
             loop();
@@ -216,7 +206,7 @@ void keyPressed() {
               
           } else {
             if (gameOver == false) {
-              println("Duplicate key pressed");
+              println("This spot is already taken!");
             }
               
             break;
@@ -224,7 +214,7 @@ void keyPressed() {
             
         default:
           if (gameOver == false) {
-            println("Invalid key pressed");
+            println("Invalid key pressed: please press a number key from 0 - 8.");
           }
       }
     }
