@@ -26,6 +26,7 @@ void draw() {
     checkForWinner(1);
     checkForDraw();
     if (gameOver == true) {
+      noLoop();
       if (winner == true) {
         println("The computer wins!");
       } else {
@@ -47,7 +48,6 @@ void draw() {
       }
     } else {
       yourTurn = false;
-      loop();
     }
   }
 }
@@ -214,7 +214,7 @@ void keyPressed() {
             
         default:
           if (gameOver == false) {
-            println("Invalid key pressed: please press a number key from 0 - 8.");
+            println("Invalid key pressed. Please press a number key from 0 - 8.");
           }
       }
     }

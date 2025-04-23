@@ -92,6 +92,31 @@ void checkForDraw() {
   }
 }
 
+void determineGameStatus() {
+  checkForWinner(1);
+  if (gameOver == true) {
+    if (winner == true) {
+      println("The computer wins!");
+      return;
+    }
+  }
+  checkForWinner(2);
+  if (gameOver == true) {
+    if (winner == true) {
+      println("You win!");
+      return;
+    }
+  }
+  checkForDraw();
+  if (gameOver == true) {
+    println("It's a tie!");
+    return;
+  }
+  if (gameOver == false) {
+    println("The game is still in progress...");
+  }
+}
+
 void computerLocation() {
   while (isPickingLocation == true) {
     possibleLocation = int(random(0, 9));
