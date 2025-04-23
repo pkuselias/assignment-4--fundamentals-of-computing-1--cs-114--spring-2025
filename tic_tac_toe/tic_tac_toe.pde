@@ -28,6 +28,7 @@ void draw() {
       return;
       
     } else {
+      noLoop();
       computerLocation();
       yourTurn = true;
     }
