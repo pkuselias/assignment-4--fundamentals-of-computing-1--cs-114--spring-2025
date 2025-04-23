@@ -21,7 +21,7 @@ void draw() {
     return;
   }
   
-  if (yourTurn == false) {
+  if (yourTurn == true) {
     determineGameStatus();
     if (gameOver == true) {
       noLoop();
@@ -29,23 +29,46 @@ void draw() {
       
     } else {
       noLoop();
-      computerLocation();
-      yourTurn = true;
     }
     
   } else {
-    if (stopStatusFromRepeating == false) {
-      determineGameStatus();
-    }
+    determineGameStatus();
     if (gameOver == true) {
       noLoop();
       return;
-      
-    } else {
-      stopStatusFromRepeating = false;
-      yourTurn = false;
+    
+    } else { 
+      noLoop();
+      computerLocation();
+      yourTurn = true;
     }
   }
+  
+  //if (yourTurn == false) {
+  //  determineGameStatus();
+  //  if (gameOver == true) {
+  //    noLoop();
+  //    return;
+      
+  //  } else {
+  //    noLoop();
+  //    computerLocation();
+  //    yourTurn = true;
+  //  }
+    
+  //} else {
+  //  if (stopStatusFromRepeating == false) {
+  //    determineGameStatus();
+  //  }
+  //  if (gameOver == true) {
+  //    noLoop();
+  //    return;
+      
+  //  } else {
+  //    stopStatusFromRepeating = false;
+  //    yourTurn = false;
+  //  }
+  //}
 }
 
 void keyPressed() {
