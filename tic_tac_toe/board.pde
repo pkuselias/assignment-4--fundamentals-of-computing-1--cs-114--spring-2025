@@ -125,7 +125,7 @@ void computerLocation() {
       case 0:
         if (canSelectZero == true) {
           canSelectZero = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -134,7 +134,7 @@ void computerLocation() {
       case 1:
         if (canSelectOne == true) {
           canSelectOne = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -143,7 +143,7 @@ void computerLocation() {
       case 2:
         if (canSelectTwo == true) {
           canSelectTwo = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -152,7 +152,7 @@ void computerLocation() {
       case 3:
         if (canSelectThree == true) {
           canSelectThree = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -161,7 +161,7 @@ void computerLocation() {
       case 4:
         if (canSelectFour == true) {
           canSelectFour = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -170,7 +170,7 @@ void computerLocation() {
       case 5:
         if (canSelectFive == true) {
           canSelectFive = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -179,7 +179,7 @@ void computerLocation() {
       case 6:
         if (canSelectSix == true) {
           canSelectSix = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -188,7 +188,7 @@ void computerLocation() {
       case 7:
         if (canSelectSeven == true) {
           canSelectSeven = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         
@@ -197,7 +197,7 @@ void computerLocation() {
       case 8:
         if (canSelectEight == true) {
           canSelectEight = false;
-          plays[possibleLocation] = 1;
+          plays[possibleLocation] = DRAW_X;
           isPickingLocation = false;
         }
         

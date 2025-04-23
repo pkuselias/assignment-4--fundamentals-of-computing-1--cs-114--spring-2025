@@ -8,11 +8,11 @@ void draw() {
   drawBoard();
   
   for (int drawSpot = 0; drawSpot < plays.length; drawSpot++) {
-    if (plays[drawSpot] == 1) {
+    if (plays[drawSpot] == DRAW_X) {
       drawShape(1, drawSpot);
     }
     
-    if (plays[drawSpot] == 2) {
+    if (plays[drawSpot] == DRAW_O) {
       drawShape(2, drawSpot);
     }
   }
@@ -22,6 +22,7 @@ void draw() {
   }
   
   if (yourTurn == false) {
+    computerLocation();
     determineGameStatus();
     if (gameOver == true) {
       noLoop();
@@ -57,7 +58,7 @@ void keyPressed() {
       switch (key) {
         case '0':
           if (canSelectZero == true) {
-            plays[0] = 2;
+            plays[0] = DRAW_O;
             canSelectZero = false;
             yourTurn = false;
             loop();
@@ -74,7 +75,7 @@ void keyPressed() {
             
         case '1':
           if (canSelectOne == true) {
-            plays[1] = 2;
+            plays[1] = DRAW_O;
             canSelectOne = false;
             yourTurn = false;
             loop();
@@ -91,7 +92,7 @@ void keyPressed() {
             
         case '2':
           if (canSelectTwo == true) {
-            plays[2] = 2;
+            plays[2] = DRAW_O;
             canSelectTwo = false;
             yourTurn = false;
             loop();
@@ -108,7 +109,7 @@ void keyPressed() {
             
         case '3':
           if (canSelectThree == true) {
-            plays[3] = 2;
+            plays[3] = DRAW_O;
             canSelectThree = false;
             yourTurn = false;
             loop();
@@ -125,7 +126,7 @@ void keyPressed() {
             
         case '4':
           if (canSelectFour == true) {
-            plays[4] = 2;
+            plays[4] = DRAW_O;
             canSelectFour = false;
             yourTurn = false;
             loop();
@@ -142,7 +143,7 @@ void keyPressed() {
             
         case '5':
           if (canSelectFive == true) {
-            plays[5] = 2;
+            plays[5] = DRAW_O;
             canSelectFive = false;
             yourTurn = false;
             loop();
@@ -159,7 +160,7 @@ void keyPressed() {
             
         case '6':
           if (canSelectSix == true) {
-            plays[6] = 2;
+            plays[6] = DRAW_O;
             canSelectSix = false;
             yourTurn = false;
             loop();
@@ -176,7 +177,7 @@ void keyPressed() {
             
         case '7':
           if (canSelectSeven == true) {
-            plays[7] = 2;
+            plays[7] = DRAW_O;
             canSelectSeven = false;
             yourTurn = false;
             loop();
@@ -193,7 +194,7 @@ void keyPressed() {
           
         case '8':
           if (canSelectEight == true) {
-            plays[8] = 2;
+            plays[8] = DRAW_O;
             canSelectEight = false;
             yourTurn = false;
             loop();
