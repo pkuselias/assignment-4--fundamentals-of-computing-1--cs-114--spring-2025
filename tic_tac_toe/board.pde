@@ -12,7 +12,6 @@ boolean gameOver = false;
 boolean winner = false;
 boolean draw = false;
 boolean isPickingLocation = true;
-boolean stopStatusFromRepeating = true;
 int boardSpotsPlayed;
 int possibleLocation;
 
@@ -95,24 +94,23 @@ void checkForDraw() {
 
 void determineGameStatus() {
   checkForWinner(1);
-  if (gameOver == true) {
-    if (winner == true) {
-      println("The computer wins!");
-      return;
-    }
+  if (winner == true) {
+    println("The computer wins!");
+    return;
   }
+
   checkForWinner(2);
-  if (gameOver == true) {
     if (winner == true) {
       println("You win!");
       return;
     }
-  }
+
   checkForDraw();
-  if (gameOver == true) {
+  if (draw == true) {
     println("It's a tie!");
     return;
   }
+  
   if (gameOver == false) {
     if (yourTurn == true) {
       println("The game is still in progress...");
