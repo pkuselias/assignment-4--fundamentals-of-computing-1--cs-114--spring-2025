@@ -12,6 +12,7 @@ boolean gameOver = false;
 boolean winner = false;
 boolean draw = false;
 boolean isPickingLocation = true;
+boolean stopStatusFromRepeating = true;
 int boardSpotsPlayed;
 int possibleLocation;
 

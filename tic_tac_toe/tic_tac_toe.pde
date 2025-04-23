@@ -34,12 +34,15 @@ void draw() {
     }
     
   } else {
-    determineGameStatus();
+    if (stopStatusFromRepeating == false) {
+      determineGameStatus();
+    }
     if (gameOver == true) {
       noLoop();
       return;
       
     } else {
+      stopStatusFromRepeating = false;
       yourTurn = false;
     }
   }
