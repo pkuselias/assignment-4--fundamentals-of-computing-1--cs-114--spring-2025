@@ -14,11 +14,10 @@ void draw() {
       drawShape(2, drawSpot);
     }
   }
-      
+  
   if (yourTurn == false) {
     noLoop();
     computerLocation();
-    drawShape(1, xLocation);
     checkForWinner(1);
     checkForDraw();
     if (gameOver == true) {
@@ -34,7 +33,6 @@ void draw() {
     
   } else {
     noLoop();
-    drawShape(2, oLocation);
     checkForWinner(2);
     checkForDraw();
     if (gameOver == true) {
