@@ -1,4 +1,4 @@
-boolean yourTurn = false;
+boolean yourTurn;
 boolean canSelectZero = true;
 boolean canSelectOne = true;
 boolean canSelectTwo = true;

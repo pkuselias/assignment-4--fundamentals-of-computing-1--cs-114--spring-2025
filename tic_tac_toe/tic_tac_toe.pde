@@ -1,5 +1,7 @@
 void setup() {
   size(500, 500);
+  computerLocation();
+  yourTurn = true;
 }
 
 void draw() {
@@ -21,7 +23,7 @@ void draw() {
   }
   
   if (yourTurn == false) {
-    noLoop();
+    //noLoop();
     computerLocation();
     checkForWinner(1);
     checkForDraw();
@@ -33,11 +35,11 @@ void draw() {
       }
     } else {
       yourTurn = true;
-      loop();
+      //loop();
     }
     
   } else {
-    noLoop();
+    //noLoop();
     checkForWinner(2);
     checkForDraw();
     if (gameOver == true) {
@@ -49,7 +51,7 @@ void draw() {
       }
     } else {
       yourTurn = false;
-      loop();
+      //loop();
     }
   }
 }
