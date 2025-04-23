@@ -22,30 +22,22 @@ void draw() {
   }
   
   if (yourTurn == false) {
-    computerLocation();
-    checkForWinner(1);
-    checkForDraw();
+    determineGameStatus();
     if (gameOver == true) {
       noLoop();
-      if (winner == true) {
-        println("The computer wins!");
-      } else {
-        println("It's a draw!");
-      }
+      return;
+      
     } else {
+      computerLocation();
       yourTurn = true;
     }
     
   } else {
-    checkForWinner(2);
-    checkForDraw();
+    determineGameStatus();
     if (gameOver == true) {
       noLoop();
-      if (winner == true) {
-        println("You win!");
-      } else {
-        println("It's a draw!");
-      }
+      return;
+      
     } else {
       yourTurn = false;
     }
