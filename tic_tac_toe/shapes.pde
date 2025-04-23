@@ -9,6 +9,8 @@ int x;
 int y;
 int shape;
 int location;
+int xLocation;
+int oLocation;
 
 void drawShape(int shape, int location) {
   switch (location) {

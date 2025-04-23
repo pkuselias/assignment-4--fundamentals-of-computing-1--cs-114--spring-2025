@@ -7,7 +7,7 @@ void draw() {
   if (yourTurn == false) {
     noLoop();
     computerLocation();
-    drawShape(1, location);
+    drawShape(1, xLocation);
     checkForWinner(1);
     checkForDraw();
     if (gameOver == true) {
@@ -23,7 +23,7 @@ void draw() {
     
   } else {
     noLoop();
-    drawShape(2, location);
+    drawShape(2, oLocation);
     checkForWinner(2);
     checkForDraw();
     if (gameOver == true) {
@@ -44,8 +44,8 @@ void keyPressed() {
   switch (key) {
     case '0':
       if (canSelectZero == true) {
-        location = 0;
-        plays[location] = 2;
+        oLocation = 0;
+        plays[oLocation] = 2;
         canSelectZero = false;
         
         break;
@@ -60,8 +60,8 @@ void keyPressed() {
       
     case '1':
       if (canSelectOne == true) {
-        location = 1;
-        plays[location] = 2;
+        oLocation = 1;
+        plays[oLocation] = 2;
         canSelectOne = false;
       
         break;
@@ -76,8 +76,8 @@ void keyPressed() {
       
     case '2':
       if (canSelectTwo == true) {
-        location = 2;
-        plays[location] = 2;
+        oLocation = 2;
+        plays[oLocation] = 2;
         canSelectTwo = false;
       
         break;
@@ -92,8 +92,8 @@ void keyPressed() {
       
     case '3':
       if (canSelectThree == true) {
-        location = 3;
-        plays[location] = 2;
+        oLocation = 3;
+        plays[oLocation] = 2;
         canSelectThree = false;
       
         break;
@@ -108,8 +108,8 @@ void keyPressed() {
       
     case '4':
       if (canSelectFour == true) {
-        location = 4;
-        plays[location] = 2;
+        oLocation = 4;
+        plays[oLocation] = 2;
         canSelectFour = false;
       
         break;
@@ -124,8 +124,8 @@ void keyPressed() {
       
     case '5':
       if (canSelectFive == true) {
-        location = 5;
-        plays[location] = 2;
+        oLocation = 5;
+        plays[oLocation] = 2;
         canSelectFive = false;
       
         break;
@@ -140,8 +140,8 @@ void keyPressed() {
       
     case '6':
       if (canSelectSix == true) {
-        location = 6;
-        plays[location] = 2;
+        oLocation = 6;
+        plays[oLocation] = 2;
         canSelectSix = false;
       
         break;
@@ -156,8 +156,8 @@ void keyPressed() {
       
     case '7':
       if (canSelectSeven == true) {
-        location = 7;
-        plays[location] = 2;
+        oLocation = 7;
+        plays[oLocation] = 2;
         canSelectSeven = false;
       
         break;
@@ -172,8 +172,8 @@ void keyPressed() {
       
     case '8':
       if (canSelectEight == true) {
-        location = 8;
-        plays[location] = 2;
+        oLocation = 8;
+        plays[oLocation] = 2;
         canSelectEight = false;
       
         break;

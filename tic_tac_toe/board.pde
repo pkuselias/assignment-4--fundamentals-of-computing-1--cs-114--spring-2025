@@ -98,7 +98,7 @@ void computerLocation() {
           canSelectZero = false;
           isPickingLocation = false;
           location = possibleLocation;
-          plays[location] = 1;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -108,7 +108,7 @@ void computerLocation() {
           canSelectOne = false;
           isPickingLocation = false;
           location = possibleLocation;
-          plays[location] = 1;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -117,8 +117,8 @@ void computerLocation() {
         if (canSelectTwo == true) {
           canSelectTwo = false;
           isPickingLocation = false;
-          location = possibleLocation;
-          plays[location] = 1;
+          xLocation = possibleLocation;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -128,7 +128,7 @@ void computerLocation() {
           canSelectThree = false;
           isPickingLocation = false;
           location = possibleLocation;
-          plays[location] = 1;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -137,8 +137,8 @@ void computerLocation() {
         if (canSelectFour == true) {
           canSelectFour = false;
           isPickingLocation = false;
-          location = possibleLocation;
-          plays[location] = 1;
+          xLocation = possibleLocation;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -147,8 +147,8 @@ void computerLocation() {
         if (canSelectFive == true) {
           canSelectFive = false;
           isPickingLocation = false;
-          location = possibleLocation;
-          plays[location] = 1;
+          xLocation = possibleLocation;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -157,8 +157,8 @@ void computerLocation() {
         if (canSelectSix == true) {
           canSelectSix = false;
           isPickingLocation = false;
-          location = possibleLocation;
-          plays[location] = 1;
+          xLocation = possibleLocation;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -167,8 +167,8 @@ void computerLocation() {
         if (canSelectSeven == true) {
           canSelectSeven = false;
           isPickingLocation = false;
-          location = possibleLocation;
-          plays[location] = 1;
+          xLocation = possibleLocation;
+          plays[xLocation] = 1;
           
           break;
         }
@@ -177,8 +177,8 @@ void computerLocation() {
         if (canSelectEight == true) {
           canSelectEight = false;
           isPickingLocation = false;
-          location = possibleLocation;
-          plays[location] = 1;
+          xLocation = possibleLocation;
+          plays[xLocation] = 1;
           
           break;
         }
