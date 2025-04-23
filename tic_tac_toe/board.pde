@@ -12,6 +12,7 @@ boolean gameOver = false;
 boolean winner = false;
 boolean draw = false;
 boolean isPickingLocation = true;
+boolean firstUserTurnPlayed = false;
 int boardSpotsPlayed;
 int possibleLocation;
 
@@ -113,7 +114,9 @@ void determineGameStatus() {
   
   if (gameOver == false) {
     if (yourTurn == true) {
-      println("The game is still in progress...");
+      if (firstUserTurnPlayed == true) {
+        println("The game is still in progress...");
+      }
     }
   }
 }

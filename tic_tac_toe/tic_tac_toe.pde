@@ -23,6 +23,7 @@ void draw() {
   
   if (yourTurn == true) {
     determineGameStatus();
+    firstUserTurnPlayed = true;
     if (gameOver == true) {
       noLoop();
       return;
