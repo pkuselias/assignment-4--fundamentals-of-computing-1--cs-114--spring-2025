@@ -22,7 +22,6 @@ void draw() {
   }
   
   if (yourTurn == false) {
-    computerLocation();
     determineGameStatus();
     if (gameOver == true) {
       noLoop();
