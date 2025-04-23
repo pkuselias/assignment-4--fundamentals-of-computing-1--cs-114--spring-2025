@@ -15,6 +15,11 @@ void draw() {
     }
   }
   
+  if (gameOver == true) {
+    noLoop();
+    return;
+  }
+  
   if (yourTurn == false) {
     noLoop();
     computerLocation();
