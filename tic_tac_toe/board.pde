@@ -93,13 +93,13 @@ void checkForDraw() {
 }
 
 void determineGameStatus() {
-  checkForWinner(1);
+  checkForWinner(DRAW_X);
   if (winner == true) {
     println("The computer wins!");
     return;
   }
 
-  checkForWinner(2);
+  checkForWinner(DRAW_O);
     if (winner == true) {
       println("You win!");
       return;
