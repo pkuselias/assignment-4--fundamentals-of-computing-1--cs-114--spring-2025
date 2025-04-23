@@ -11,7 +11,9 @@ boolean canSelectEight = true;
 boolean gameOver = false;
 boolean winner = false;
 boolean draw = false;
+boolean isPickingLocation = true;
 int boardSpotsPlayed;
+int possibleLocation;
 
 int[] plays = new int[9];
 
@@ -86,6 +88,96 @@ void checkForDraw() {
     gameOver = true;
   }
 }
+
+void computerLocation() {
+  while (isPickingLocation == true) {
+    possibleLocation = int(random(8));
+    switch (possibleLocation) {
+      case 0:
+        if (canSelectZero == true) {
+          canSelectZero = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 1:
+        if (canSelectOne == true) {
+          canSelectOne = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 2:
+        if (canSelectTwo == true) {
+          canSelectTwo = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 3:
+        if (canSelectThree == true) {
+          canSelectThree = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 4:
+        if (canSelectFour == true) {
+          canSelectFour = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 5:
+        if (canSelectFive == true) {
+          canSelectFive = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 6:
+        if (canSelectSix == true) {
+          canSelectSix = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 7:
+        if (canSelectSeven == true) {
+          canSelectSeven = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+        
+      case 8:
+        if (canSelectEight == true) {
+          canSelectEight = false;
+          isPickingLocation = true;
+          location = possibleLocation;
+          
+          break;
+        }
+    }
+  }
+}
+        
+        
   
         
 
