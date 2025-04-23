@@ -4,6 +4,17 @@ void setup() {
 
 void draw() {
   drawBoard();
+  
+  for (int drawSpot = 0; drawSpot < plays.length; drawSpot++) {
+    if (plays[drawSpot] == 1) {
+      drawShape(1, drawSpot);
+    }
+    
+    if (plays[drawSpot] == 2) {
+      drawShape(2, drawSpot);
+    }
+  }
+      
   if (yourTurn == false) {
     noLoop();
     computerLocation();
