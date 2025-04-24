@@ -10,15 +10,7 @@ void setup() {
 }
 
 void draw() {
-  for (int drawSpot = 0; drawSpot < plays.length; drawSpot++) {
-    if (plays[drawSpot] == DRAW_X) {
-      drawShape(DRAW_X, drawSpot);
-    }
-    
-    if (plays[drawSpot] == DRAW_O) {
-      drawShape(DRAW_O, drawSpot);
-    }
-  }
+  drawSpots();
   
   if (yourTurn == true) {
     determineGameStatus();
@@ -298,6 +290,18 @@ void computerLocation() {
         }
         
         break;
+    }
+  }
+}
+
+void drawSpots() {
+  for (int drawSpot = 0; drawSpot < plays.length; drawSpot++) {
+    if (plays[drawSpot] == DRAW_X) {
+      drawShape(DRAW_X, drawSpot);
+    }
+    
+    if (plays[drawSpot] == DRAW_O) {
+      drawShape(DRAW_O, drawSpot);
     }
   }
 }
