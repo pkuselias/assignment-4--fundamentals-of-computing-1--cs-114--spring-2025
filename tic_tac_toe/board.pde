@@ -1,4 +1,3 @@
-boolean yourTurn;
 boolean canSelectZero = true;
 boolean canSelectOne = true;
 boolean canSelectTwo = true;
@@ -11,10 +10,8 @@ boolean canSelectEight = true;
 boolean gameOver = false;
 boolean winner = false;
 boolean draw = false;
-boolean isPickingLocation = true;
 boolean firstUserTurnPlayed = false;
 int boardSpotsPlayed;
-int possibleLocation;
 
 int[] plays = new int[9];
 

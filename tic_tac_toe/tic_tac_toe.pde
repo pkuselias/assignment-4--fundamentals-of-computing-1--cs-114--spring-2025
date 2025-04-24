@@ -1,3 +1,7 @@
+boolean isPickingLocation = true;
+boolean yourTurn;
+int possibleLocation;
+
 void setup() {
   size(500, 500);
   drawBoard();
