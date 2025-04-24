@@ -9,11 +9,11 @@ void draw() {
   
   for (int drawSpot = 0; drawSpot < plays.length; drawSpot++) {
     if (plays[drawSpot] == DRAW_X) {
-      drawShape(1, drawSpot);
+      drawShape(DRAW_X, drawSpot);
     }
     
     if (plays[drawSpot] == DRAW_O) {
-      drawShape(2, drawSpot);
+      drawShape(DRAW_O, drawSpot);
     }
   }
   
