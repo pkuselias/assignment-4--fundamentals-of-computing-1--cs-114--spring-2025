@@ -208,3 +208,92 @@ void keyPressed() {
     }
   }
 }
+
+void computerLocation() {
+  isPickingLocation = true;
+  while (isPickingLocation == true) {
+    possibleLocation = int(random(0, 9));
+    switch (possibleLocation) {
+      case 0:
+        if (canSelectZero == true) {
+          canSelectZero = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 1:
+        if (canSelectOne == true) {
+          canSelectOne = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 2:
+        if (canSelectTwo == true) {
+          canSelectTwo = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 3:
+        if (canSelectThree == true) {
+          canSelectThree = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 4:
+        if (canSelectFour == true) {
+          canSelectFour = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 5:
+        if (canSelectFive == true) {
+          canSelectFive = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 6:
+        if (canSelectSix == true) {
+          canSelectSix = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 7:
+        if (canSelectSeven == true) {
+          canSelectSeven = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+        
+      case 8:
+        if (canSelectEight == true) {
+          canSelectEight = false;
+          plays[possibleLocation] = DRAW_X;
+          isPickingLocation = false;
+        }
+        
+        break;
+    }
+  }
+}
