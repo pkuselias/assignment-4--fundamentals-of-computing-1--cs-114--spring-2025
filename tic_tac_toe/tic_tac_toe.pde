@@ -1,12 +1,11 @@
 void setup() {
   size(500, 500);
+  drawBoard();
   computerLocation();
   yourTurn = true;
 }
 
 void draw() {
-  drawBoard();
-  
   for (int drawSpot = 0; drawSpot < plays.length; drawSpot++) {
     if (plays[drawSpot] == DRAW_X) {
       drawShape(DRAW_X, drawSpot);
