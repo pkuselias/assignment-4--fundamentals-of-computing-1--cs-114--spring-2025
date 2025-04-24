@@ -17,10 +17,6 @@ void draw() {
     }
   }
   
-  if (gameOver == true) {
-    return;
-  }
-  
   if (yourTurn == true) {
     determineGameStatus();
     firstUserTurnPlayed = true;
