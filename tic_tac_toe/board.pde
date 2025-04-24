@@ -12,7 +12,6 @@ boolean winner = false;
 boolean draw = false;
 boolean firstUserTurnPlayed = false;
 int boardSpotsPlayed;
-
 int[] plays = new int[9];
 
 void checkForWinner(int shape) {
