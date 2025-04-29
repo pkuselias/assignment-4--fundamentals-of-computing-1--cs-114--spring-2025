@@ -1,2 +1,2 @@
-final int DRAW_X = 1;
-final int DRAW_O = 2;
+final int X_SHAPE = 1;
+final int O_SHAPE = 2;

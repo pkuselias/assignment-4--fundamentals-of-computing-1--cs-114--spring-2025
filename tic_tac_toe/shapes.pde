@@ -67,7 +67,7 @@ void drawShape(int shape, int location) {
       break;
   }
   
-  if (shape == DRAW_X) {
+  if (shape == X_SHAPE) {
     drawX(x, y);
     
   } else {

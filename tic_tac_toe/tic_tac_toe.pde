@@ -46,7 +46,7 @@ void keyPressed() {
         case '0':
           if (canSelectZero == true) {
             canSelectZero = false;
-            plays[0] = DRAW_O;
+            plays[0] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -63,7 +63,7 @@ void keyPressed() {
         case '1':
           if (canSelectOne == true) {
             canSelectOne = false;
-            plays[1] = DRAW_O;
+            plays[1] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -80,7 +80,7 @@ void keyPressed() {
         case '2':
           if (canSelectTwo == true) {
             canSelectTwo = false;
-            plays[2] = DRAW_O;
+            plays[2] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -97,7 +97,7 @@ void keyPressed() {
         case '3':
           if (canSelectThree == true) {
             canSelectThree = false;
-            plays[3] = DRAW_O;
+            plays[3] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -114,7 +114,7 @@ void keyPressed() {
         case '4':
           if (canSelectFour == true) {
             canSelectFour = false;
-            plays[4] = DRAW_O;
+            plays[4] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -131,7 +131,7 @@ void keyPressed() {
         case '5':
           if (canSelectFive == true) {
             canSelectFive = false;
-            plays[5] = DRAW_O;
+            plays[5] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -148,7 +148,7 @@ void keyPressed() {
         case '6':
           if (canSelectSix == true) {
             canSelectSix = false;
-            plays[6] = DRAW_O;
+            plays[6] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -165,7 +165,7 @@ void keyPressed() {
         case '7':
           if (canSelectSeven == true) {
             canSelectSeven = false;
-            plays[7] = DRAW_O;
+            plays[7] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -182,7 +182,7 @@ void keyPressed() {
         case '8':
           if (canSelectEight == true) {
             canSelectEight = false;
-            plays[8] = DRAW_O;
+            plays[8] = O_SHAPE;
             yourTurn = false;
             loop();
             
@@ -213,7 +213,7 @@ void computerLocation() {
       case 0:
         if (canSelectZero == true) {
           canSelectZero = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -222,7 +222,7 @@ void computerLocation() {
       case 1:
         if (canSelectOne == true) {
           canSelectOne = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -231,7 +231,7 @@ void computerLocation() {
       case 2:
         if (canSelectTwo == true) {
           canSelectTwo = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -240,7 +240,7 @@ void computerLocation() {
       case 3:
         if (canSelectThree == true) {
           canSelectThree = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -249,7 +249,7 @@ void computerLocation() {
       case 4:
         if (canSelectFour == true) {
           canSelectFour = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -258,7 +258,7 @@ void computerLocation() {
       case 5:
         if (canSelectFive == true) {
           canSelectFive = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -267,7 +267,7 @@ void computerLocation() {
       case 6:
         if (canSelectSix == true) {
           canSelectSix = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -276,7 +276,7 @@ void computerLocation() {
       case 7:
         if (canSelectSeven == true) {
           canSelectSeven = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -285,7 +285,7 @@ void computerLocation() {
       case 8:
         if (canSelectEight == true) {
           canSelectEight = false;
-          plays[possibleLocation] = DRAW_X;
+          plays[possibleLocation] = X_SHAPE;
           isPickingLocation = false;
         }
         
@@ -296,12 +296,12 @@ void computerLocation() {
 
 void drawSpots() {
   for (int drawSpot = 0; drawSpot < plays.length; drawSpot++) {
-    if (plays[drawSpot] == DRAW_X) {
-      drawShape(DRAW_X, drawSpot);
+    if (plays[drawSpot] == X_SHAPE) {
+      drawShape(X_SHAPE, drawSpot);
     }
     
-    if (plays[drawSpot] == DRAW_O) {
-      drawShape(DRAW_O, drawSpot);
+    if (plays[drawSpot] == O_SHAPE) {
+      drawShape(O_SHAPE, drawSpot);
     }
   }
 }
