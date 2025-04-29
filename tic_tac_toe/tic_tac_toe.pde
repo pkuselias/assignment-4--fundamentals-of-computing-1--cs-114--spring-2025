@@ -1,4 +1,4 @@
-boolean isPickingLocation = true;
+boolean isPickingLocation;
 boolean yourTurn;
 int possibleLocation;
 
