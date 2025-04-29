@@ -75,8 +75,8 @@ void checkForWinner(int shape) {
 
 void checkForDraw() {
   boardSpotsPlayed = 0;
-  for (int spots = 0; spots < plays.length; spots++) {
-    if (plays[spots] != 0) {
+  for (int spot = 0; spot < plays.length; spot++) {
+    if (plays[spot] != 0) {
       boardSpotsPlayed++;
     }
   }
